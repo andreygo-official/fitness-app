@@ -1,34 +1,27 @@
-# Infinite Steps 🏃‍♂️🏋️‍♀️
+# FitnessWebsite
 
-**Infinite Steps** is a dynamic fitness tracking application built using **Angular**. The app is designed to help users monitor their physical activities, set fitness goals, and stay motivated on their journey to a healthier lifestyle.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
 
----
+## Development server
 
-## 🌟 Features
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-- **Activity Tracking**: Log and monitor daily physical activities, including steps, workouts, and exercises.
-- **Goal Setting**: Set and track personal fitness goals.
-- **Progress Visualization**: View activity progress with dynamic charts and statistics.
-- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices.
-- **Motivational UI**: Sleek and engaging user interface to keep users motivated.
+## Code scaffolding
 
----
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## 🔧 Technologies Used
+## Build
 
-The app leverages the following technologies for a seamless experience:
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-- **Angular**: Framework for building a responsive and dynamic single-page application.
-- **TypeScript**: For robust and maintainable code.
-- **CSS**: For styling and enhancing the UI/UX.
+## Running unit tests
 
----
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## 🚀 Getting Started
+## Running end-to-end tests
 
-### Clone the Repository
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-To set up Infinite Steps locally, clone the repository:
+## Further help
 
-```bash
-git clone https://github.com/your-username/infinite-steps.git
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

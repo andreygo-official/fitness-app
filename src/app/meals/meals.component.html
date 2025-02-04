@@ -1,0 +1,6 @@
+<div [class.last-item]="isLast">
+    <img [src]='meal.imgSrc' alt=img{{meal.id}} class="recipe-img">
+    <h3 class="text-center mt-3" (click)="directToMeal(meal)">{{meal.heading}}</h3>
+    <p class="fw-bold text-center mt-3" style="color:rgba(114, 27, 195, 0.6);">Time: {{meal.time}} | <span
+            style="color:rgb(199, 74, 199)">{{meal.calories}} calories</span></p>
+</div>

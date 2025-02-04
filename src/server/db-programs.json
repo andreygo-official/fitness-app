@@ -1,0 +1,51 @@
+{
+    "programs": [
+        {
+            "id": 1,
+            "imgSrc": "https://www.verywellfit.com/thmb/Xio5I7FgQh0GRwhS6qWAio3amOM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Pushups-5680bb925f9b586a9edf3927.jpg",
+            "price": "$35 PER SESSION",
+            "programType": "GAINING MUSCLE MASS",
+            "time": "🏋️‍♂️ 8 weeks",
+            "intensity": "⚡ Intensifying",
+            "nutrition": "🍳 High-Protein",
+            "info": "Gain muscle and sculpt your physique for your wedding day. This comprehensive training program encompasses 4 sessions per week.",
+            "list": [
+                "Receive a new workout plan each week targeting muscle gain with a focus on core strength, upper body development, and more.",
+                "Training in the gym under the guidance of a personal trainer. Each workout is accompanied by a video for home practice.",
+                "Relax and recharge through targeted recovery and muscle relaxation techniques."
+            ]
+
+        },
+        {
+            "id": 2,
+            "imgSrc": "https://img.freepik.com/free-photo/young-happy-sportswoman-getting-ready-workout-tying-shoelace-fitness-center_637285-470.jpg",
+            "price": "$29 PER SESSION",
+            "programType": "POST-PREGNANCY",
+            "time": "🏋️‍♂️ 12 weeks",
+            "intensity": "💤 Recovery",
+            "nutrition": "🥑 Keto",
+            "info": "Regain your strength and confidence after pregnancy with our dedicated training program. Tailored to new mothers, this plan includes 4 sessions per week.",
+            "list": [
+                "Each week, you'll receive a new workout designed to enhance core stability, improve posture, and gently increase overall strength.",
+                "Engage in safe, effective training with a personal trainer in the gym. Each session is complemented by a follow-along video for at-home exercises.",
+                "Unwind and rejuvenate with guided meditation designed to reduce stress and promote emotional well-being."
+            ]
+        },
+        {
+            "id": 3,
+            "imgSrc": "https://www.naturalfoundations.com/wp-content/uploads/2019/11/six-pack.jpg",
+            "price": "$50 PER SESSION",
+            "programType": "POST-BULKING CUTTING PHASE",
+            "time": "🏋️‍♂️ 8 weeks",
+            "intensity": "🚴‍♂️ Refinement",
+            "nutrition": "🍳 High-Protein",
+            "info": "Sharpen your physique and shed excess weight after a bulking phase. This precision-tailored program includes 4 sessions per week.",
+            "list": [
+               "Each week introduces a new workout regimen centered around high-intensity interval training (HIIT) to boost metabolism and fat loss, with a focus on defining muscle groups.",
+               "Train with a dedicated personal trainer in the gym to ensure proper form and intensity.",
+                "Accompanying videos are provided for each workout to guide your at-home sessions."
+            ]
+
+        }
+    ]
+}

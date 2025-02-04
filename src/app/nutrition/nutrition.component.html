@@ -1,0 +1,53 @@
+<div class="container">
+    <p class="text-center"><img [src]="imgCookSrc" class="cook-img" alt="cookImg"></p>
+    <p class="text-center" style="color: rgb(199, 74, 199); font-weight: bold;"><span
+            style="color: rgb(0, 210, 210);">/</span>
+        NUTRITION <span style="color: rgb(0, 210, 210);">/</span></p>
+    <div class="nutrition-info">
+        <div class="nutrition-text">
+            <h1 class="text-center">WE ARE WHAT WE EAT</h1>
+            <p class="text-center fw-bold fs-5 mt-3 mb-5" style="color: rgba(114, 27, 195, 0.6);">Change your daily diet
+                for the
+                better.</p>
+            <p>Make healthy eating a part of your family’s daily life with these quick and easy dietitian-approved
+                recipes
+                for
+                healthier meals and snacks.</p><br>
+            <p>Infuse your morning with my nutritious breakfast suggestions, and invigorate your bento with my
+                delectable
+                Asian
+                noodle and rice concoctions. For entertaining, I am able to provide you with an extensive selection of
+                vibrant,
+                crispy salads, including numerous vegetarian and vegan options, in addition to delectable barbecue
+                recipes.
+                In
+                addition, nutritious desserts, condiments, and garnishes are available to satisfy your delectable tooth.
+            </p>
+        </div>
+    </div>
+
+</div>
+<div class="main">
+    <div class="container">
+        <p class="text-center" style="color: rgb(199, 74, 199); font-weight: bold;"><span
+                style="color: rgb(0, 210, 210);">/</span>
+            RECIPES <span style="color: rgb(0, 210, 210);">/</span></p>
+        <div class="recipes-info">
+            <h1 class="text-center">HEALTHY RECIPES</h1>
+            <p class="text-center fw-bold fs-5 mt-3 mb-5" style="color: rgba(114, 27, 195, 0.6);">Read, try, repeat!
+                These recipes are very easy and tasty.</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mt-3" *ngFor="let meal of meals; let i = index"
+            [ngClass]="{
+                'col-12':true,
+                'col-md-6': i !== meals.length - 1,
+                'col-lg-4': true,
+            }"
+            >
+                <app-meals [meal]="meal" [class.last-item]="i === meals.length - 1"></app-meals>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,17 @@
+.current-section{
+    text-align: center;
+    background-color: rgb(164, 64, 99);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+h1{
+    color: white;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+p{
+    color: aliceblue;
+}
+.colored{
+    color: rgb(209, 169, 81);
+}
