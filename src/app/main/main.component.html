@@ -1,0 +1,304 @@
+<div class="main-info" id="top">
+    <div class="container">
+        <div class="intro">
+            <h1>MAKE A STEP TO A<br> <span style="color: rgb(229, 125, 246);">HEALTHIER</span> LIFE</h1>
+            <div class="main-btns">
+                <button class="btn btn-secondary" (click)="directTo('contacts')">GET STARTED NOW ▶</button>
+                <button class="btn btn-secondary ms-4" (click)="directTo('programs')"> CHOOSE A PROGRAM</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="programs-cont pt-5">
+    <div class="container">
+        <p class="text-center" style="color: rgb(199, 74, 199); font-weight: bold;"><span
+                style="color: rgb(0, 210, 210);">/</span>
+            PROGRAMS <span style="color: rgb(0, 210, 210);">/</span></p>
+        <h1 class="text-center">CHOOSE THE PROGRAM</h1>
+        <p class="text-center fw-bold fs-5 mt-3 mb-5" style="color: rgba(114, 27, 195, 0.6);">I offer training programs
+            for different purposes and can design an individual program just for you.</p>
+        <div class="row">
+            <div class="col-12 col-lg-4 col-md-6" [ngClass]="{'col-md-6': i !== programs.length - 1}"
+                *ngFor="let program of programs; let i = index">
+                <img width="100%" [src]="program.imgSrc" alt="img{{program.id}}">
+                <div class="training-info">
+                    <p style="color: rgb(199, 74, 199); font-weight: bold;"><span
+                            style="color: rgb(0, 210, 210);">/</span>
+                        {{program.price}} <span style="color: rgb(0, 210, 210);">/</span></p>
+                    <h4 class="journey-heading mb-4">{{program.programType}}</h4>
+                    <div class="mb-4 fw-bold">
+                        <span class="me-4">{{program.time}}</span>
+                        <span class="me-4">{{program.intensity}}</span>
+                        <span>{{program.nutrition}}</span>
+                    </div>
+                    <p>{{program.info}}</p>
+                    <button class="btn btn-primary get-program" (click)="directTo('contacts')">START TRAINING</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="item-one">
+            <img [src]="imgSrc" alt="imgFit">
+        </div>
+        <div class="item-two">
+            <div>
+                <p style="color: rgb(0, 210, 210); font-weight: bold;"><span style="color: rgb(199, 74, 199);">/</span>
+                    ABOUT ME <span style="color: rgb(199, 74, 199);">/</span></p>
+                <h1 class="text-white mt-4">HI, I'M ANDRII HOROBETS!</h1>
+                <p style="color: rgb(183, 183, 183);" class="fs-5 fw-bold mt-5">I'm a professional personal fitness
+                    trainer and
+                    nutritionist.</p>
+                <ul>
+                    <li>Gym in Odesa</li>
+                    <li>Remote sessions</li>
+                    <li class="nutrition">Nutrition plans</li>
+                </ul>
+                <p style="color: rgb(183, 183, 183);" class="fs-5 mt-4">​I was not always a healthy and active person
+                    like now. My fit body is a result of years of hard work and life changes.</p>
+                <p style="color: rgb(183, 183, 183);" class="fs-5 mt-4">I want to show my fitness experience to those
+                    who want to start their journey to a healthier
+                    lifestyle. I will help you realize your full potential and become fitter and stronger.</p>
+                <button class="btn btn-primary lets-train mt-4" (click)="directTo('contacts')">LET'S TRAIN NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="steps-info">
+    <div class="container cont-three">
+        <p class="text-center" style="color: rgb(199, 74, 199); font-weight: bold;"><span
+                style="color: rgb(0, 210, 210);">/</span>
+            HOW TO START <span style="color: rgb(0, 210, 210);">/</span></p>
+        <h1 class="text-center">START TRAINING TODAY</h1>
+        <p class="text-center fw-bold fs-5 steps-route" style="color: rgba(114, 27, 195, 0.6);">Only four easy steps to
+            the body of your dreams:</p>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mt-4">
+                <div class="step text-center">
+                    <h2><span>01</span></h2>
+                    <h2 class="step-info">PICK A PROGRAM</h2>
+                    <p class="fw-bold mt-4" style="color: rgba(55, 27, 195, 0.6);">I offer a variety of programs you can
+                        join in my gym or online.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-4">
+                <div class="step text-center">
+                    <h2><span>02</span></h2>
+                    <h2 class="step-info">MAKE A PAYMENT</h2>
+                    <p class="fw-bold mt-4" style="color: rgba(55, 27, 195, 0.6);">You can pay monthly or per each
+                        session.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-4">
+                <div class="step text-center">
+                    <h2><span>03</span></h2>
+                    <h2 class="step-info">GET AN INVITATION</h2>
+                    <p class="fw-bold mt-4" style="color: rgba(55, 27, 195, 0.6);">I'll send you details about training
+                        sessions.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-4">
+                <div class="step text-center">
+                    <h2><span>04</span></h2>
+                    <h2 class="step-info">START TRAINING</h2>
+                    <p class="fw-bold mt-4" style="color: rgba(55, 27, 195, 0.6);">Join me online of offline and start
+                        losing weight right away!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="photos-of-fitness">
+    <div class="container">
+        <p class="text-center fs-3"><i class="bi bi-instagram"></i></p>
+        <h1 class="text-center"><span style="color: rgb(199, 74, 199);">#</span>FITWITHANDRII</h1>
+        <p class="text-center fw-bold fs-5 steps-route mb-5" style="color: rgba(114, 27, 195, 0.6);">Follow my Instagram
+            to
+            have access to useful fitness tips and advice, special offers, and many more!</p>
+        <div class="collage">
+            <div class="image-one">
+                <img class="collage-img" [src]="collageOneSrc" alt="collage1"
+                    (click)="openModal(collageOneSrc, imageModal)">
+                <ng-template #imageModal let-modal>
+                    <div class="modal-header">
+                        <button type="button" class="close btn btn-danger" aria-label="Close"
+                            (click)="modal.dismiss('Cross click')">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img [src]="currentImgSrc" class="img-fluid current-image" alt="Enlarged collage image">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" (click)="changeImg(-1)">&#10094;</button>
+                        <button type="button" class="btn btn-primary" (click)="changeImg(1)">&#10095;</button>
+                    </div>
+                </ng-template>
+            </div>
+            <div class="image-two">
+                <img class="collage-img" [src]="collageTwoSrc" alt="collage2"
+                    (click)="openModal(collageTwoSrc, imageModal)">
+            </div>
+            <div class="image-three">
+                <img class="collage-img" [src]="collageThreeSrc" alt="collage3"
+                    (click)="openModal(collageThreeSrc, imageModal)">
+            </div>
+            <div class="image-four">
+                <img class="collage-img" [src]="collageFourSrc" alt="collage4"
+                    (click)="openModal(collageFourSrc, imageModal)">
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img [src]="" class="img-fluid" alt="Enlarged collage image">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">&#10094;</button>
+                        <button type="button" class="btn btn-primary">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="success-stories">
+    <div class="container">
+        <div class="grid-container">
+            <div class="fitness-man">
+                <img class="man-img" [src]="fitnessManSrc" alt="fitnessMan">
+            </div>
+            <div class="fitness-info">
+                <p class="success-stories-heading" style="color: rgb(0, 210, 210); font-weight: bold;"><span
+                        style="color: rgb(199, 74, 199);">/</span>
+                    SUCCESS STORIES <span style="color: rgb(199, 74, 199);">/</span></p>
+                <h1 class="text-white mb-5"><span style="color: rgb(223, 84, 223);">JAMES SMITH,</span><br>DESIGNER</h1>
+                <ul>
+                    <li><i class="bi bi-person-fill me-1"></i>Personal trainings</li>
+                    <li><i class="bi bi-clock-fill me-1"></i>10 weeks+</li>
+                    <li><i class="bi bi-suit-club-fill me-1 nutrition"></i>Nutrition</li>
+                </ul>
+                <p class="fitness-description">"If you are in search of a certified professional fitness trainer, go no
+                    further, hire Evelyn Mason. She
+                    is really the best of the best and now I know why! She has developed a personal fitness program
+                    designed
+                    to lose my extra weight in a short time period through intensive workouts and individual diet plan.
+                    Thank you very much! I couldn't be happier with the final result!"</p>
+                <button class="btn btn-primary lets-train mt-4" (click)="goToStories()">MORE STORIES</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="success-info">
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-md-6">
+                <h5>WANT TO RESHAPE YOUR LIFESTYLE AND BODY?</h5>
+                <p class="fw-bold" style="color: rgb(223, 84, 223); font-size: 16px;">FEEL FREE TO CONTACT ME RIGHT NOW!
+                </p>
+            </div>
+            <div class="col col-12 col-md-6">
+                <p class="phone-info"><i class="bi bi-telephone me-3"></i><a href="tel:+1(234)5678900">+1 (234) 567 89 00</a>
+                </p>
+                <p class="email-info">* Or email me at <a
+                        href="mailto:strafelord24@gmail.com">strafelord24&#64;gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="useful-articles">
+    <p class="text-center" style="color: rgb(0, 210, 210); font-weight: bold;"><span
+            style="color: rgb(199, 74, 199);">/</span>
+        BLOG <span style="color: rgb(199, 74, 199);">/</span></p>
+    <h1 class="text-center">USEFUL ARTICLES</h1>
+    <p class="text-center fw-bold fs-5 steps-route mb-5" style="color: rgba(114, 27, 195, 0.6);">Read more about
+        nutrition and training to understand the processes in your body.</p>
+    <div class="container">
+        <div class="grid-cont">
+            <div class="useful-img">
+                <img class="blog-img" [src]="blogSrc" alt="blogImg">
+            </div>
+            <div class="useful-info">
+                <div class="blog-one">
+                    <h5>MAKE FITNESS YOUR LIFESTYLE</h5>
+                    <p>Fitness is not just hard training every day, it has to be your way of life. Change your eating
+                        habits, believe in yourself, and strive for a better, healthier life!</p>
+                    <a class="add-info fw-bold" href="#top">READ MORE +</a>
+                </div>
+                <div class="blog-two">
+                    <h5>HOW FOOD AFFECTS WEIGHT LOSS</h5>
+                    <p>To lose weight, you need to eat healthy food. However, few people understand how food really
+                        affects the speed and quality of weight loss.</p>
+                    <a href="#top" class="add-info fw-bold">READ MORE +</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="parallax-container">
+    <div class="backdrop">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 col-md-6 parallax-info">
+                    <h1 class="text-black">MAKE YOUR STEP TO THE NEW BODY</h1>
+                    <p class="text-black fw-bold mt-3 fs-5">Combine active training with healthy food, stay motivated,
+                        and see results in less than one month!</p>
+                    <div class="parallax-details mt-5">
+                        <div class="programs-data">
+                            <p><i class="bi bi-heart-pulse-fill"></i></p>
+                            <h4 class="text-black mt-4">PROGRAMS</h4>
+                            <p class="mt-4 fs-5">Regular training sessions help to lose weight effectively.</p>
+                        </div>
+                        <div class="nutrition-data">
+                            <p><i class="bi bi-capsule"></i></p>
+                            <h4 class="mt-4 text-black">NUTRITION</h4>
+                            <p class="mt-4 fs-5">Proper nutrition plan keeps you healthy and active.</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary lets-train mt-5" (click)="directTo('contacts')">CONTACT ME NOW</button>
+                </div>
+                <div class="col col-12 col-md-6 parallax-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid-contaner-three">
+    <div>
+        <img class="cooking-img" [src]="cookingImg" alt="img1">
+    </div>
+    <div class="recipes-info">
+        <p style="color: rgb(0, 210, 210); font-weight: bold;"><span style="color: rgb(199, 74, 199);">/</span>
+            RECIPES <span style="color: rgb(199, 74, 199);">/</span></p>
+        <h1>HEALTHY RECIPES</h1>
+        <p class="fw-bold mt-4" style="color: rgb(53, 31, 101);">Healthy eating is your first step to success!</p>
+        <p class="mt-4" style="color: rgb(53, 31, 101, 0.6);">We are what we eat, remember? Proper nutrition is
+            important not only for the period of active weight loss but
+            also throughout life if you want to live long and stay active. I can prove that healthy food can be
+            delicious and offer you simple recipes.</p>
+        <div class="mt-5">
+            <div class="meal-block mt-3" *ngFor="let meal of meals; let i = index" [ngClass]="{'d-none': i >= 2}">
+
+                <img class="meal-img" [src]="meal.imgSrc" alt="">
+                <div class="ms-3">
+                    <h4 (click)="toMeal(meal)" style="cursor: pointer;">{{meal.heading}}</h4>
+                    <p style="color: rgb(53, 31, 101, 0.6)" class="meal-info">{{meal.time}} {{meal.calories}}</p>
+                </div>
+            </div>
+            <button class="btn btn-primary lets-train mt-5" (click)="directTo('nutrition')">MORE RECIPES</button>
+
+        </div>
+        <div>
+
+        </div>
+    </div>
+</div>

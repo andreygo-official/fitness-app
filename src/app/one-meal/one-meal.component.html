@@ -1,0 +1,65 @@
+<div class="meal-info-container">
+    <div class="container" *ngIf="meal">
+        <div class="row">
+            <div class="col col-12 col-md-6 mt-5">
+                <img class="meal-image" [src]="meal.imgSrc" alt="meal.id">
+            </div>
+            <div class="col col-12 col-md-6 mt-5">
+                <p class="fw-bold" style="color: rgb(199, 74, 199);">#DAIRY-FREE #VEGETARIAN #VEGAN</p>
+                <h1 class="fw-bold mt-4" style="color: rgb(53, 22, 113);">{{meal.heading}}</h1>
+                <ul class="general-info mt-4">
+                    <li><i class="bi bi-person-fill me-2"></i>{{meal.people}}</li>
+                    <li><i class="bi bi-clock-fill me-2"></i>{{meal.time}}</li>
+                    <li><i class="bi bi-star-fill me-2"></i>{{meal.difficulty}}</li>
+                </ul>
+                <p class="meal-intro mt-4">{{meal.intro}}</p>
+                <div class="advice">
+                    <i class="bi bi-exclamation-circle"></i>
+                    <p>{{meal.advice}}</p>
+                </div>
+            </div>
+            <div class="nutrients">
+                <div class="nutrient">
+                    <p>Calories</p>
+                    <p>{{meal.calories}}</p>
+                </div>
+                <div class="nutrient">
+                    <p>Fat</p>
+                    <p>{{meal.fat}}</p>
+                </div>
+                <div class="nutrient">
+                    <p>Sugar</p>
+                    <p>{{meal.sugar}}</p>
+                </div>
+                <div class="nutrient">
+                    <p>Salt</p>
+                    <p>{{meal.salt}}</p>
+                </div>
+                <div class="nutrient">
+                    <p>Protein</p>
+                    <p>{{meal.protein}}</p>
+                </div>
+                <div class="nutrient">
+                    <p>Carbs</p>
+                    <p>{{meal.carbs}}</p>
+                </div>
+                <div class="nutrient">
+                    <p>Fiber</p>
+                    <p>{{meal.fiber}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-5 ingredients-info mt-5">
+                <h2>INGREDIENTS</h2>
+                <hr class="line">
+                <p class="ingredients">{{meal.ingredients}}</p>
+            </div>
+            <div class="col-12 col-md-7 mt-5">
+                <div class="bullets">
+                    <p class="bullet" *ngFor="let bullet of meal.bullets; let i = index">{{i+1}}. {{bullet}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+# 🚀 Angular Build Artifacts
+dist/
+out-tsc/
+.tmp/
+
+# ⚡ Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# 🔐 Environment Files (DO NOT commit secrets)
+src/environments/environment*.ts
+
+# 🛠️ Compiled TypeScript Files
+*.js
+*.d.ts
+*.map
+
+# 🎨 IDE & Editor Files
+.idea/
+.vscode/
+*.code-workspace
+*.sublime-*
+*.swp
+*.swo
+*.swn
+
+# 📝 Logs & Debugging Files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+debug.log
+logs/
+*.log
+
+# 📸 Test Coverage Reports
+coverage/
+karma-coverage/
+
+# 🏗️ Build Output
+.angular/
+angular.json
+npm-shrinkwrap.json
+package.json
+tsconfig.json
+tsconfig.*.json
+.eslintrc.json
+.prettierrc
+.prettierignore
+.editorconfig
+.dockerignore
+
+# 🏁 OS-Specific Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 💾 Mac/Linux System Files
+*.bak
+*.swp
+*.swo
+*.swn

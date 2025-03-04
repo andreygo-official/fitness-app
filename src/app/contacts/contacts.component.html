@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="contacts">
+        <div class="row">
+            <div class="registration-form col-12 col-md-6 mt-4">
+                <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group mt-4">
+                        <input placeholder="Enter your name*" formControlName="username" type="text"
+                            class="form-control" [class.is-invalid]="userName?.invalid && userName?.touched">
+                        <div *ngIf="userName?.invalid && userName?.touched">
+                            <small class="text-danger" *ngIf="userName?.errors?.['required']">Username is
+                                required!</small>
+                            <small class="text-danger" *ngIf="userName?.errors?.['minlength']">Username must have at
+                                least
+                                {{userName?.errors?.['minlength'].requiredLength}} characters</small>
+                        </div>
+
+                    </div>
+                    <div class="form-group mt-4">
+                        <input placeholder="Enter your email*" formControlName="email" type="email" class="form-control"
+                            [class.is-invalid]="email?.invalid && email?.touched">
+                        <div *ngIf="email?.invalid && email?.touched">
+                            <small class="text-danger" *ngIf="email?.errors?.['required']">Email is required!</small>
+                            <small class="text-danger" *ngIf="email?.errors?.['email']">Email is incorrect!</small>
+                        </div>
+                    </div>
+                    <div class="form-group mt-4">
+                        <select [class.is-invalid]="program?.invalid && program?.touched" formControlName="program"
+                            class="form-control" [ngClass]="{'first': program?.value === ''}">
+                            <option value="" disabled selected>Please Choose...</option>
+                            <option *ngFor="let option of options.slice(1); let i = index" [value]="option">{{option}}
+                            </option>
+                        </select>
+                        <div *ngIf="program?.invalid && program?.touched">
+                            <small class="text-danger" *ngIf="program?.errors?.['required']">Please, choose
+                                program!</small>
+                        </div>
+                    </div>
+                    <div class="form-group mt-4">
+                        <textarea placeholder="Tell me about your fitness goals" formControlName="fitness-area"
+                            cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                    <p class="text-center"><button [disabled]="!registrationForm.valid || program?.value === options[0]"
+                            class="mt-5 btn btn-primary" type="submit">Send</button></p>
+                </form>
+            </div>
+            <div class="col-12 col-md-6 main-accordion mt-4">
+                <p style="color: rgb(199, 74, 199); font-weight: bold;"><span style="color: rgb(0, 210, 210);">/</span>
+                    CONTACTS <span style="color: rgb(0, 210, 210);">/</span></p>
+                <h1>HAVE QUESTIONS?</h1>
+                <p class="fw-bold mt-4 fs-5" style="color: rgb(53, 31, 101, 0.6);">You may find answers below.
+                    Otherwise, feel free to contact me.</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item" *ngFor="let accordion of accordions">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" [attr.aria-expanded]="accordion.expanded" (click)="toggleAccordeon(accordion)"
+                                [attr.data-bs-target]="'#'+ accordion.id" [attr.aria-controls]="accordion.id">
+                                <div class="button-header">
+                                    <span>{{accordion.header}}</span>
+                                    <i [ngClass]="{'bi-plus-lg': !accordion.expanded, 'bi-dash-lg': accordion.expanded}" class="bi"></i>
+                                </div>
+
+                            </button>
+
+                        </h2>
+                        <div id="accordion.id" class="accordion-collapse collapse" [class.show]="accordion.expanded"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                {{accordion.body}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

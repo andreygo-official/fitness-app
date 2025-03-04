@@ -1,0 +1,79 @@
+.logo{
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+}
+.navbar{
+    background-color: rgb(219, 100, 100);
+}
+.new-bg{
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.container-fluid{
+    display: flex;
+    justify-content: space-around;
+}
+.nav-icons{
+    display: flex;
+}
+.nav-link{
+    color: white;
+}
+.navbar-nav li{
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-right: 35px;
+    text-align: center;
+}
+.navbar-nav li:last-child{
+    margin-right: 0px;
+}
+.navbar-nav li:hover{
+    border-bottom: 2px solid rgb(255, 215, 55);
+    transition: 0.5s border ease-out;
+}
+.nav-icons i{
+    margin-right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s color;
+    color: rgb(135, 208, 244);
+}
+.nav-icons i:last-child{
+    margin-right: 0px;
+}
+.nav-icons i:hover{
+    color: bisque;
+}
+:host {
+    display: block;
+}
+.nav-left{
+    margin-left: 100px;
+}
+.nav-right{
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (width <= 991px){
+    .nav-left{
+        margin-left: 0px;
+    }
+    .nav-right{
+        margin-right: 0px;
+    }
+    .container-fluid{
+        justify-content: space-between;
+    }
+    .navbar-nav li{
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+}

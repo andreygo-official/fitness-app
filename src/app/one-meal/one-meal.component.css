@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+}
+.meal-info-container{
+    background-color: rgb(243, 243, 243);
+    padding-bottom: 100px;
+}
+.meal-image{
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}
+.container{
+    padding-top: 90px;
+}
+h1{
+    font-style: italic;
+}
+.general-info{
+    list-style: none;
+    padding: 0px;
+    font-size: 20px;
+}
+.general-info li{
+    display: inline-block;
+    margin-right: 30px;
+    color: rgb(104, 53, 155, 0.5);
+    font-weight: bold;
+}
+.general-info li .bi{
+    color: rgb(25, 217, 217);
+}
+.meal-intro{
+    font-size: 20px;
+    color: rgb(104, 53, 155, 0.7);
+}
+.advice{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.advice p{
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(104, 53, 155, 0.7);
+}
+.advice .bi{
+    color: rgb(25, 217, 217);
+    font-size: 80px;
+    margin-right: 20px;
+}
+.nutrients{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.nutrient{
+    text-align: center;
+    background-color: white;
+    padding: 10px 50px 10px 50px;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 5px;
+    width: 160px;
+}
+.nutrient p:first-child{
+    color: rgb(104, 53, 155, 0.7);
+}
+.nutrient p:last-child{
+    color: rgb(199, 74, 199);
+    font-size: 20px;
+    font-weight: bold;
+}
+.line{
+    width: 70px;
+    border: 3px solid blue;
+    color: none;
+}
+.ingredients-info{
+    background-color: white;
+    padding: 50px 30px 50px 30px;
+    border-radius: 15px;
+}
+h2{
+    color: rgb(54, 34, 110);
+    font-weight: bold;
+}
+.ingredients{
+    white-space: pre-line;
+    font-size: 20px;
+    color: rgb(104, 53, 155, 0.7);
+}
+.bullets{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bullet{
+    font-size: 20px;
+    color: rgb(104, 53, 155, 0.7);
+}

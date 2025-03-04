@@ -1,0 +1,53 @@
+.logo{
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+}
+.navbar-nav li a{
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-right: 35px;
+    text-align: center;
+}
+.navbar-nav li:last-child{
+    margin-right: 0px;
+}
+.navbar-nav li a:hover{
+    color: rgb(175, 175, 175);
+    transition: 0.5s color ease-out;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+.links a{
+    cursor: pointer;
+
+}
+.links a:hover{
+    color: gray;
+}
+.icons i{
+    margin-right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s color;
+}
+.icons i:last-child{
+    margin-right: 0px;
+}
+.icons i:hover{
+    color: rgb(250, 228, 163);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+:host {
+    display: block;
+    background-color: rgb(202, 79, 79);
+    color: white;
+}

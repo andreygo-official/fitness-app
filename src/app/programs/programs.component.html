@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row mt-4" *ngFor="let program of programs; let i = index">
+        <div class="col-12 col-md-6 image-one" [ngClass]="{
+            'order-md-2': i === programs.length - 2,
+            'order-1': i === programs.length - 2
+        }">
+            <img width="100%" [src]="program.imgSrc" alt="img{{program.id}}">
+        </div>
+        <div class="col-12 col-md-6" [ngClass]="{
+            'order-md-1': i === programs.length - 2,
+            'order-2': i === programs.length - 2
+        }">
+            <div class="training-info">
+                <p style="color: rgb(199, 74, 199); font-weight: bold;"><span style="color: rgb(0, 210, 210);">/</span>
+                    {{program.price}} <span style="color: rgb(0, 210, 210);">/</span></p>
+                <h4 class="journey-heading mb-4">{{program.programType}}</h4>
+                <div class="mb-4 fw-bold">
+                    <span class="me-4">{{program.time}}</span>
+                    <span class="me-4">{{program.intensity}}</span>
+                    <span>{{program.nutrition}}</span>
+                </div>
+                <p>{{program.info}}</p>
+                <ul class="gain-mass">
+                    <li *ngFor="let point of program.list">{{point}}</li>
+                  </ul>
+                <button class="btn btn-primary get-program">GET IT NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
