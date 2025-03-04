@@ -41,7 +41,6 @@ karma-coverage/
 
 # 🏗️ Build Output
 .angular/
-angular.json
 npm-shrinkwrap.json
 tsconfig.json
 tsconfig.*.json
